@@ -47,6 +47,9 @@ export default class MainState extends Phaser.State {
         btnClear.events.onInputUp.add(this.clearBitMapData, this);
     }
 
+    /**
+     * Draw on the bitmap.
+     * */
     paint(pointer, x, y) {
         if (!pointer.isDown) return;
 
